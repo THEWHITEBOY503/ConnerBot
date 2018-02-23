@@ -1,5 +1,4 @@
 #Conner Bot BETA. Version 2.0A
-#OAuth links are found in ~/dbot/extra/notbot/oauth
 
 
 #Starting the bot
