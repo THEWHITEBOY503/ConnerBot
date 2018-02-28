@@ -121,11 +121,6 @@ async def on_message(message):
         print('Ran beta_ban')
         bot.remove_command("ban")
 
-    @bot.command(name='woomy', pass_context=True)
-    async def woomy(ctx)
-        await bot.send_message(message.channel, 'woomy!')
-        print('woomy!')
-
 
 
 #These prevent the bot from breaking. When you add a new command, give them a bot.remove_command
