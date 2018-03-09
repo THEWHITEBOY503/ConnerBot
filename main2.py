@@ -121,6 +121,10 @@ async def on_message(message):
         print('Ran beta_ban')
         bot.remove_command("ban")
 
+    #make sure the weather update script is running or this will be out of date
+    @bot.command(name='weather', pass_context=True)
+    async def var(ctx):
+        await bot.send_file(message.channel, 'weather.png')
 
 
 #These prevent the bot from breaking. When you add a new command, give them a bot.remove_command
@@ -135,6 +139,7 @@ async def on_message(message):
     bot.remove_command("connerweb")
     bot.remove_command("kick")
     bot.remove_command("ban")
+    bot.remove_command("weather")
 
 #Tells Conner Bot who it is. Don't leak this token.
 bot.run('token here')
