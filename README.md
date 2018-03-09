@@ -26,6 +26,21 @@ Part 3- Setting up Conner Bot
 user@example:/$ nano beta.py
 at the bottom of the file, you will find a token section. Put your bots token there. Save and exit
 
-Part 4- Running Conner Bot
+Part 4- Getting the weather module updater
+**make sure you are in the ConnerBot directory**
+user@example:/$ nano weatherupdate
+once in, type this
+```cd ~
+cd ConnerBot
+watch -n 60 wget wttr.in/plano.png -O weather.png```
+```
+Note: where plano.png is replace plano with your city name. Save and exit.
+user@example:/$ chmod 755 weatherupdate
+
+Part 5- Running Conner Bot
+In one window:
 user@example:/$ python beta.py
 If all goes according to plan, you should see "Starting Conner Bot BETA" on your terminal.
+In another window:
+user@example:/$ ./weatherupdate
+this is for the weather updater
