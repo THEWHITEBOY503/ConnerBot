@@ -17,6 +17,7 @@ user@example:/$ pip install discord uvloop
 ```
 
 Note that you will need to run source venv/bin/activate every time you want to run Conner Bot if venv isn't already loaded
+You could also use python3.6 but why would you do that?
 
 Part 2- Clone the repository
 ```
@@ -42,7 +43,9 @@ cd ConnerBot
 watch -n 1800 wget wttr.in/plano.png -O weather.png```
 ```
 Note: where plano.png is replace plano with your city name. Save and exit.
+```
 user@example:/$ chmod 755 weatherupdate
+```
 
 Part 5- Running Conner Bot
 In one window:
