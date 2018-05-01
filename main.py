@@ -68,57 +68,57 @@ async def on_message(message):
         localtime = dt.datetime.utcnow()
         lagtime = (localtime - message_time) / 2
         await bot.send_message(message.channel, f"Pong! {lagtime.microseconds / 1000}ms")
-        print('Ran beta_ping')
+        print('Ran ping')
         print(f"Ping: {lagtime.microseconds / 1000}ms")
 
     @bot.command(name='cmds', pass_context=True)
     async def cmds(ctx):
         await bot.send_message(message.channel, 'Check your DMs')
-        embed=discord.Embed(title="beta Commands", color=0x2db0ff)
-        embed.set_author(name="Conner Bot-beta", url='https://discord.gg/usWqeSF', icon_url='https://media.discordapp.net/attachments/354388052178894869/380138617592610827/mountain_grid___vaporwave_by_davidfigueira-db1ug68.jpg')
-        embed.add_field(name="beta_ver", value="Shows my version", inline=False)
-        embed.add_field(name="beta_uptime", value="Shows the bots uptime", inline=False)
-        embed.add_field(name="beta_info", value="Some info about me", inline=False)
-        embed.add_field(name="beta_connerweb", value="The bot isn't finished", inline=False)
+        embed=discord.Embed(title="Extra Commands", color=0x2db0ff)
+        embed.set_author(name="Conner Bot", url='https://discord.gg/usWqeSF', icon_url='https://media.discordapp.net/attachments/354388052178894869/380138617592610827/mountain_grid___vaporwave_by_davidfigueira-db1ug68.jpg')
+        embed.add_field(name="_ver", value="Shows my version", inline=False)
+        embed.add_field(name="_uptime", value="Shows the bots uptime", inline=False)
+        embed.add_field(name="_info", value="Some info about me", inline=False)
+        embed.add_field(name="_connerweb", value="The bot isn't finished", inline=False)
         embed.set_footer(text="haha you probably won't use these")
         await bot.send_message(message.author, embed=embed)
-        print('Ran beta_cmds')
+        print('Ran _cmds')
 
     @bot.command(name='uptime', pass_context=True)
     async def uptime(ctx):
         await bot.send_message(message.channel, f"{dt.datetime.utcnow() - starttime}")
-        print('Ran beta_uptime')
+        print('Ran _uptime')
         print(f"Uptime: {dt.datetime.utcnow() - starttime}")
 
 
     @bot.command(name='info', pass_context=True)
     async def info(ctx):
         embed=discord.Embed(title="Conner Bot info", color=0x2db0ff)
-        embed.set_author(name="Conner Bot-beta", url='https://discord.gg/usWqeSF', icon_url='https://cdn.discordapp.com/attachments/369960796123561984/369964885582544896/lTO9Plf.png')
+        embed.set_author(name="Conner Bot", url='https://discord.gg/usWqeSF', icon_url='https://cdn.discordapp.com/attachments/369960796123561984/369964885582544896/lTO9Plf.png')
         embed.add_field(name="Hello! I am Conner Bot! I was created by Conner AKA THEWHITEBOY503 on a Google Cloud Compute Ubuntu VPS. This bot would not be possible without the help of Kelwing! And most of all, thank you. Thank you, the user, for adding me to your server. It really means a lot to me. I do lots of things, and more and more is added often! I hope you enjoy using me!", value="~Conner", inline=False)
         embed.set_footer(text="Hosted on GCP")
         await bot.send_message(message.channel, embed=embed)
-        print('Ran beta_info')
+        print('Ran _info')
 
     @bot.command(name='connerweb', pass_context=True)
     @commands.has_permissions(send_messages=True)
     async def connerweb(ctx):
         await bot.send_message(message.channel, 'http://connerbot.tk')
-        print('Ran beta_connerweb')
+        print('Ran _connerweb')
 
     @bot.command(name='kick', pass_context=True)
     @commands.has_permissions(kick_members=True)
     async def kick(ctx, member:discord.Member):
         await bot.kick(member)
         await bot.send_message(message.channel, 'User has been kicked.')
-        print('Ran beta_kick')
+        print('Ran _kick')
 
     @bot.command(name='ban', pass_context=True)
     @commands.has_permissions(ban_members=True)
     async def ban(ctx, member:discord.Member):
         await bot.ban(member)
         await bot.send_message(message.channel, 'User has been banned. May they never come back.')
-        print('Ran beta_ban')
+        print('Ran _ban')
         bot.remove_command("ban")
 
     #make sure the weather update script is running or this will be out of date
