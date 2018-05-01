@@ -5,7 +5,8 @@ Conner Bot for Discord. Python version.
 Setup: 
 Part 1- Installing Python and tools
 **user@example:/$  is just to show the terminal, copy/paste the stuff after that**
-```user@example:/$ sudo add-apt-repository ppa:jonathonf/python-3.6
+```sudo add-apt-repository ppa:jonathonf/python-3.6
+user@example:/$ sudo add-apt-repository ppa:jonathonf/python-3.6
 user@example:/$ sudo apt-get update
 user@example:/$ sudo apt-get install python3.6
 user@example:/$ wget https://bootstrap.pypa.io/get-pip.py
