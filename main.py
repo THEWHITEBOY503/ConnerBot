@@ -1,13 +1,13 @@
-#Conner Bot BETA. Version 2.0A
+#Conner Bot. Version 2.0
 
 
 #Starting the bot
-print('Starting Conner Bot BETA')
+print('Starting Conner Bot')
 import discord
 import asyncio
 import datetime as dt
 from discord.ext import commands
-bot = commands.Bot(command_prefix='beta_')
+bot = commands.Bot(command_prefix='_')
 starttime = dt.datetime.utcnow()
 bot.remove_command("help")
 
@@ -19,15 +19,15 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-    await bot.change_presence(game=discord.Game(name='beta_help'))
+    await bot.change_presence(game=discord.Game(name='_help'))
 
 
 #Commands
 @bot.event
 async def on_message(message):
-    if message.content.startswith('beta_hi'):
+    if message.content.startswith('_hi'):
         #ech
-        print('Ran beta_hi')
+        print('Ran _hi')
 #Add new lines with this:
 #@bot.command(name='commandname', pass_context=True)
 #async def commandname(ctx):
@@ -37,17 +37,17 @@ async def on_message(message):
     async def help(ctx):
         await bot.send_message(message.channel, 'Ok. I have attempted to DM you my commands. If you did not get a DM, check your server settings')
         embed=discord.Embed(title="Commands", color=0x2db0ff)
-        embed.set_author(name="Conner Bot-beta", url='https://discord.gg/usWqeSF', icon_url='https://media.discordapp.net/attachments/354388052178894869/380138617592610827/mountain_grid___vaporwave_by_davidfigueira-db1ug68.jpg')
+        embed.set_author(name="Conner Bot", url='https://discord.gg/usWqeSF', icon_url='https://media.discordapp.net/attachments/354388052178894869/380138617592610827/mountain_grid___vaporwave_by_davidfigueira-db1ug68.jpg')
         #Add a line using embed.add_field(name="Text", value="Subtext", inline=False)
-        embed.add_field(name="beta_help", value="DMs you this screen", inline=False)
-        embed.add_field(name="beta_donate", value="Gives you a link to donate to me.", inline=False)
-        embed.add_field(name="beta_ping", value="Runs a speedtest.", inline=False)
-        embed.add_field(name="beta_cmds", value="Shows beta commands.", inline=False)
-        embed.add_field(name="beta_kick", value="Kicks a user. Tag a user to be kicked.", inline=False)
-        embed.add_field(name="beta_ban", value="Bans a user. Tag a user to be banned.", inline=False)
+        embed.add_field(name="_help", value="DMs you this screen", inline=False)
+        embed.add_field(name="_donate", value="Gives you a link to donate to me.", inline=False)
+        embed.add_field(name="_ping", value="Runs a speedtest.", inline=False)
+        embed.add_field(name="_cmds", value="Shows beta commands.", inline=False)
+        embed.add_field(name="_kick", value="Kicks a user. Tag a user to be kicked.", inline=False)
+        embed.add_field(name="_ban", value="Bans a user. Tag a user to be banned.", inline=False)
         embed.set_footer(text="The ting goes skraaaa")
         await bot.send_message(message.author, embed=embed)
-        print('Ran beta_help')
+        print('Ran help')
         bot.remove_command("help")
 
     @bot.command(name='donate', pass_context=True)
@@ -55,12 +55,12 @@ async def on_message(message):
         await bot.send_message(message.channel, 'Conner Bot runs on a GCP free tier. Consider donating.')
         await bot.send_message(message.channel, 'https://paypal.me/THEWHITEBOY503')
         await bot.send_message(message.channel, 'If you would rather donate bitcoin, my address is 1NfwCX46Qh1AviveQPupEM1mCj2ncPAVn3 https://a.doko.moe/nwbcnf.jpeg')
-        print('Ran beta_donate')
+        print('Ran donate')
 
     @bot.command(name='ver', pass_context=True)
     async def ver(ctx):
-        await bot.send_message(message.channel, 'Conner Bot v2.0A (v2.0beta)')
-        print('Ran beta_ver')
+        await bot.send_message(message.channel, 'Conner Bot v2.0')
+        print('Ran ver')
 
     @bot.command(name='ping', pass_context=True)
     async def ping(ctx):
