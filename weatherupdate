@@ -1,0 +1,1 @@
+watch -n 1800 wget wttr.in/plano.png -O weather.png
