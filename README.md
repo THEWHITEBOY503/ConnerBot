@@ -54,8 +54,9 @@ user@example:/$ sudo apt-get install npm
 user@example:/$ npm install discord.js
 user@example:/$ npm install infinite-loop
 user@example:/$ nano config.json
-edit accordingly
 ```
+edit accordingly
+
 
 Part 6- Running Conner Bot
 In one window:
