@@ -48,7 +48,16 @@ Note: where plano.png is replace plano with your city name. Save and exit.
 user@example:/$ chmod 755 weatherupdate
 ```
 
-Part 5- Running Conner Bot
+Part 5- Fun Fact quote module
+```user@example:/$ sudo apt-get install node.js
+user@example:/$ sudo apt-get install npm
+user@example:/$ npm install discord.js
+user@example:/$ npm install infinite-loop
+user@example:/$ nano config.json
+edit accordingly
+```
+
+Part 6- Running Conner Bot
 In one window:
 ```
 user@example:/$ python beta.py
@@ -59,3 +68,7 @@ In another window:
 user@example:/$ ./weatherupdate
 ```
 this is for the weather updater
+
+In another window:
+```user@example:/$ node quote.js```
+This is for the fun fact module
