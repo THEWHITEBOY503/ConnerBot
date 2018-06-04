@@ -300,7 +300,7 @@ async def on_message(message):
     lmsg = None
     smsg = None
     if not message.author.bot:
-        if message.content.startswith('taso.'):
+        if message.content.startswith('cb.'):
             fields = message.content.split()
             cmd = fields[0].split('.')[1]
             await bot.call(cmd, message)
