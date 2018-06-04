@@ -73,3 +73,5 @@ this is for the weather updater
 In another window:
 ```user@example:/$ node quote.js```
 This is for the fun fact module
+
+[Great! You've gotten your very own ConnerBot clone up and running! Cool! BUT WAIT, THERES MORE! You need to set up leveling. Click here for a guide on how to do so](https://github.com/THEWHITEBOY503/ConnerBot/blob/master/Levels/README.md)
