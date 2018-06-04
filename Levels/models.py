@@ -1,12 +1,12 @@
 import config
 from peewee import BigIntegerField, IntegerField, ForeignKeyField, \
                    MySQLDatabase, SqliteDatabase, BooleanField, Model
-from playhouse.shortcuts import RetryOperationalError
+from playhouse.shortcuts import OperationalError
 
 cfg = config.botConfig()
 
 
-class MySQLDB(RetryOperationalError, MySQLDatabase):
+class MySQLDB(OperationalError, MySQLDatabase):
     pass
 
 
