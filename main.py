@@ -45,7 +45,9 @@ async def on_message(message):
         embed.add_field(name="_cmds", value="Shows beta commands.", inline=False)
         embed.add_field(name="_kick", value="Kicks a user. Tag a user to be kicked.", inline=False)
         embed.add_field(name="_ban", value="Bans a user. Tag a user to be banned.", inline=False)
-        embed.set_footer(text="The ting goes skraaaa")
+        embed.add_field(name="cb.leaderboard", value="Check where you are on the ConnerBot message leaderboard", inline=False)
+        emebd.add_field(name="cb.profile", value="See your current level and XP count", inline=False)
+        embed.set_footer(text="Yaw YEET")
         await bot.send_message(message.author, embed=embed)
         print('Ran help')
         bot.remove_command("help")
@@ -59,7 +61,7 @@ async def on_message(message):
 
     @bot.command(name='ver', pass_context=True)
     async def ver(ctx):
-        await bot.send_message(message.channel, 'Conner Bot v2.0')
+        await bot.send_message(message.channel, 'Conner Bot v2.2')
         print('Ran ver')
 
     @bot.command(name='ping', pass_context=True)
@@ -125,6 +127,14 @@ async def on_message(message):
     @bot.command(name='weather', pass_context=True)
     async def var(ctx):
         await bot.send_file(message.channel, 'weather.png')
+        
+    @bot.command(name='leaderboard', pass_context=True)
+    async def var(ctx):
+        await bot.send_message(message.channel, 'Hm, there seems to be a mistake... Were you trying to run `cb.leaderboard`?')
+        
+    @bot.command(name='leaderboard', pass_context=True)
+    async def var(ctx):
+        await bot.send_message(message.channel, 'Hm, there seems to be a mistake... Were you trying to run `cb.profile`?')
 
 
 #These prevent the bot from breaking. When you add a new command, give them a bot.remove_command
@@ -140,6 +150,8 @@ async def on_message(message):
     bot.remove_command("kick")
     bot.remove_command("ban")
     bot.remove_command("weather")
+    bot.remove_command("leaderboard")
+    bot.remove_command("profile")
 
 #Tells Conner Bot who it is. Don't leak this token.
 bot.run('token here')
