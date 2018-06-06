@@ -4,7 +4,9 @@ Based off [Taso](https://github.com/SSL-Dev-Team/Taso)
 
 ## Setting up SQL
 *We will be using Microsoft SQL for linux here. Feel free to use whatever SQL server you want*
+
 **For Microsoft SQL, you NEED 64-bit Ubuntu Linux.**
+
 To install mSQL for Linux:
 ```
 user@example:/$ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
