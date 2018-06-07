@@ -127,12 +127,12 @@ async def on_message(message):
     @bot.command(name='weather', pass_context=True)
     async def var(ctx):
         await bot.send_file(message.channel, 'weather.png')
-        
+
     @bot.command(name='leaderboard', pass_context=True)
     async def var(ctx):
         await bot.send_message(message.channel, 'Hm, there seems to be a mistake... Were you trying to run `cb.leaderboard`?')
-        
-    @bot.command(name='leaderboard', pass_context=True)
+
+    @bot.command(name='profile', pass_context=True)
     async def var(ctx):
         await bot.send_message(message.channel, 'Hm, there seems to be a mistake... Were you trying to run `cb.profile`?')
 
