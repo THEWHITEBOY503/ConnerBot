@@ -1,6 +1,3 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
 # ConnerBot
 Conner Bot for Discord. Python version.
 **This project requires Linux, preferrably Ubuntu. If you are not running Linux, STOP! Conner Bot WILL NOT run.**
@@ -83,14 +80,3 @@ user@example:/$ node quote.js
 This is for the fun fact module
 
 [Great! You've gotten your very own ConnerBot clone up and running! Cool! BUT WAIT, THERES MORE! You need to set up leveling. Click here for a guide on how to do so](https://github.com/THEWHITEBOY503/ConnerBot/blob/master/Levels/README.md)
------BEGIN PGP SIGNATURE-----
-
-iQEzBAEBCAAdFiEEAZ9MdU/tKmm+vx4cpthhdsEjQywFAlsY0JQACgkQpthhdsEj
-QyyCmAf/X2GSt9SI6sp17fBfyxh9W43xmvfuJZumDIlovxmugnbf7qKEntu1G64f
-Fe8ddCppxYdAfEVS87G2fUKpnSljtbNkCvwLephKtmLuLy9BJRtoS5VwWZbVVBdS
-fiIexI3CGyQVF2QzDbQplPVzjxgYeDMOE64JwCde8c4NuMeP7RNNZleMxsbmsPgk
-YgMLKoXV55pTX0pXo/2++mGiFEx1kE669AF1UsBUJjsvx85DzlytZBbdjbPgFYcR
-XxtM8APWLOPmbFQYEOwThprMJA8NzrLFxMIdvEsxS36BmmEhGR0mtPDoUlNwBVY/
-SXX/jQ4aaOzMfCkHfWmaiN7xMbyC6w==
-=vTCP
------END PGP SIGNATURE-----
