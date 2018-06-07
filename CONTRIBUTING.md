@@ -10,4 +10,4 @@ E-mail me at connerbotdiscord@gmail.com if you would like to become a dev.
 Make a new branch of ConnerBot and make great changes, then start a pull request!
 
 ## Report issues
-Something wrong? Tell us! Add an issue on the GitHub!
+Something wrong? Tell us! Open an issue on the GitHub!
