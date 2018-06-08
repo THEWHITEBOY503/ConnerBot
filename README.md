@@ -64,7 +64,7 @@ edit accordingly
 ### Part 6- Running Conner Bot
 In one window:
 ```
-user@example:/$ python beta.py
+user@example:/$ python main.py
 ```
 If all goes according to plan, you should see "Starting Conner Bot BETA" on your terminal.
 In another window:
