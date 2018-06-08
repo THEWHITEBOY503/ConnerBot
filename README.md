@@ -43,7 +43,7 @@ once in, type this
 ```
 cd ~
 cd ConnerBot
-watch -n 1800 wget wttr.in/plano.png -O weather.png```
+watch -n 1800 wget wttr.in/plano.png -O weather.png
 ```
 Note: where plano.png is replace plano with your city name. Save and exit.
 ```
