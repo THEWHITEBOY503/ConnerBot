@@ -66,7 +66,7 @@ In one window:
 ```
 user@example:/$ python main.py
 ```
-If all goes according to plan, you should see "Starting Conner Bot BETA" on your terminal.
+If all goes according to plan, you should see "Starting Conner Bot" on your terminal.
 In another window:
 ```
 user@example:/$ ./weatherupdate
