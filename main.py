@@ -92,16 +92,6 @@ async def on_message(message):
         print('Ran _uptime')
         print(f"Uptime: {dt.datetime.utcnow() - starttime}")
 
-
-    @bot.command(name='info', pass_context=True)
-    async def info(ctx):
-        embed=discord.Embed(title="Conner Bot info", color=0x2db0ff)
-        embed.set_author(name="Conner Bot", url='https://discord.gg/usWqeSF', icon_url='https://cdn.discordapp.com/attachments/369960796123561984/369964885582544896/lTO9Plf.png')
-        embed.add_field(name="Hello! I am Conner Bot! I was created by Conner AKA THEWHITEBOY503 on a Google Cloud Compute Ubuntu VPS. This bot would not be possible without the help of Kelwing! And most of all, thank you. Thank you, the user, for adding me to your server. It really means a lot to me. I do lots of things, and more and more is added often! I hope you enjoy using me!", value="~Conner", inline=False)
-        embed.set_footer(text="Hosted on GCP")
-        await bot.send_message(message.channel, embed=embed)
-        print('Ran _info')
-
     @bot.command(name='connerweb', pass_context=True)
     @commands.has_permissions(send_messages=True)
     async def connerweb(ctx):
@@ -145,7 +135,6 @@ async def on_message(message):
     bot.remove_command("ping")
     bot.remove_command("cmds")
     bot.remove_command("uptime")
-    bot.remove_command("info")
     bot.remove_command("connerweb")
     bot.remove_command("kick")
     bot.remove_command("ban")
