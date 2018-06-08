@@ -1,0 +1,200 @@
+<!--
+Copyright © 2018 THEWHITEBOY503 from Please Stop Sifting Through my Source code Inc.
+All rights reserved.
+No really, the fuck are you doing digging around my source?
+-->
+
+<html lang="en-US"><head>
+    <!-- Stooooop -->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>ConnerBot for Discord</title>
+<meta name="generator" content="Jekyll v3.7.3">
+<meta property="og:title" content="ConnerBot">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://thewhiteboy503.github.io/ConnerBot/">
+<meta property="og:url" content="https://thewhiteboy503.github.io/ConnerBot/">
+<meta property="og:site_name" content="ConnerBot">
+<script type="application/ld+json">
+{"name":"ConnerBot","@type":"WebSite","url":"https://thewhiteboy503.github.io/ConnerBot/","headline":"ConnerBot","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/ConnerBot/assets/css/style.css?v=3ba637e3ad2315fa8fd7dc0225be2b9ab49ddfc4">
+  <style type="text/css">.backpack.dropzone {
+  font-family: 'SF UI Display', 'Segoe UI';
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  font-weight: lighter;
+  color: white;
+  will-change: right;
+  z-index: 2147483647;
+  bottom: 20%;
+  background: #333;
+  position: fixed;
+  user-select: none;
+  transition: left .5s, right .5s;
+  right: 0px; }
+  .backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+  .backpack.dropzone .title::before {
+    content: 'Save to'; }
+  .backpack.dropzone.closed {
+    right: -250px; }
+  .backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+
+@keyframes sxt-play-anim-hover {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -5250px; } }
+  .backpack.dropzone.saving .title::before {
+    content: 'Saving to'; }
+  .backpack.dropzone.saving .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+
+@keyframes sxt-play-anim-saving {
+  100% {
+    background-position: -14750px; } }
+  .backpack.dropzone.saved .title::before {
+    content: 'Saved to'; }
+  .backpack.dropzone.saved .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+
+@keyframes sxt-play-anim-saved {
+  100% {
+    background-position: -5000px; } }
+</style></head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">ConnerBot</h1>
+      <h2 class="project-tagline"></h2>
+
+        <a href="https://github.com/THEWHITEBOY503/ConnerBot" class="btn">View on GitHub</a>
+        <a href="https://discordapp.com/oauth2/authorize?client_id=369653232303210497&scope=bot&permissions=2146958591" class="btn">Add ConnerBot to your server</a>
+        <a href="http://thewhiteboy503.github.io/ConnerBot" class="btn">Return to the main site</a>
+        <a href="https://github.com/THEWHITEBOY503/ConnerBot/blob/master/Levels/README.md" class="btn">Set up the Leveling module</a>
+
+
+    </section>
+
+    <section class="main-content">
+      <h1 id="ConnerBot-for-Discord">ConnerBot for Discord</h1>
+
+      <h2 id="Setting-up-ConnerBot">Setting up a ConnerBot clone</h2>
+
+      <p>You will need Linux, preferrably 64-bit Ubuntu Linux.<p>
+      <strong>If you are not running Linux, STOP! ConnerBot cannot be set up .</strong>
+
+      <h2 id="installing-tools">PART 1: Installing Python and tools</h2>
+
+      <strong>user@example:/$  is just to show the terminal, copy/paste the stuff after that</strong>
+
+      <code>
+      user@example:/$ sudo add-apt-repository ppa:jonathonf/python-3.6
+      use@example:/$ sudo apt-get update
+      user@example:/$ sudo apt-get install python3.6
+      user@example:/$ wget https://bootstrap.pypa.io/get-pip.py
+      user@example:/$ sudo python3.6 get-pip.py
+      user@example:/$ sudo pip3.6 install virtualenv
+      user@example:/$ virtualenv -p python3.6 venv
+      user@example:/$ source venv/bin/activate
+      user@example:/$ pip install discord uvloop
+      </code>
+
+      <p>Note that you will need to run source venv/bin/activate every time you want to run Conner Bot if venv isn't already loaded</p>
+      <p>You could also use python3.6 but why would you do that?</p>
+
+      <h2 id="Cloning">Cloning the repository</h2>
+
+      <code>
+      user@example:/$ git clone https://github.com/THEWHITEBOY503/ConnerBot.git
+      user@example:/$ cd ConnerBot
+      </code>
+
+      <h2 id="Setting up">Setting up ConnerBot</h2>
+
+      <p>Make sure you are in the ConnerBot repository.</p>
+
+      <code>
+      user@example:/$ nano beta.py
+      </code>
+
+      <p>at the bottom of the file, you will find a token section. Put your bot accounts token there. Save and exit</p>
+
+      <h2 id="Updater">Part 4- Getting the weather module updater</h3>
+
+      <code>
+      user@example:/$ nano weatherupdate
+      </code>
+
+      <p>then, type in:</p>
+
+      <code>
+      watch -n 1800 wget wttr.in/plano.png -O weather.png
+      </code>
+
+      <p>Note: where plano.png is replace plano with your city name. Save and exit.</p>
+
+      <code>
+      user@example:/$ chmod 755 weatherupdate
+     </code>
+
+      <h2 id="Open-source">Fun fact module</h2>
+      <code>
+      user@example:/$ sudo apt-get install node.js
+      user@example:/$ sudo apt-get install npm
+      user@example:/$ npm install discord.js
+      user@example:/$ npm install infinite-loop
+      user@example:/$ nano config.json
+      </code>
+
+      <p>edit accordingly</p>
+
+      <h2 id="Running">Running ConnerBot</h2>
+
+      <p>For every code block, run that command in a different SSH session (or screen branch if you use screen)
+
+      <code>
+      user@example:/$ python main.py
+      </code>
+
+      <code>
+      user@example:/$ ./weatherupdate
+      </code>
+
+      <code>
+      user@example:/$ node quote.js
+      </code>
+
+      <a href="https://github.com/THEWHITEBOY503/ConnerBot/blob/master/Levels/README.md">Great! You've gotten your very own ConnerBot clone up and running! Cool! BUT WAIT, THERES MORE! You need to set up leveling. Click here for a guide on how to do so</a>
+
+      <footer class="site-footer">
+
+          <span class="site-footer-owner"><a href="https://github.com/THEWHITEBOY503/ConnerBot">ConnerBot</a> is maintained by <a href="https://github.com/THEWHITEBOY503">THEWHITEBOY503</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. (Well, not exactly...)</span>
+      </footer>
+    </section>
+
+
+
+
+</body></html>
