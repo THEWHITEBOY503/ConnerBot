@@ -1,6 +1,7 @@
 # ConnerBot
 Conner Bot for Discord. Python version.
 **This project requires Linux, preferrably Ubuntu. If you are not running Linux, STOP! Conner Bot WILL NOT run.**
+*Note: the main bot and the quote module can be run on Windows using the Ubuntu subsystem. The Leaderboard module must be hosted on a 64-bit Ubuntu server (not including Ubuntu subsystem).*
 
 ## Setup:
 
@@ -50,7 +51,7 @@ Note: where plano.png is replace plano with your city name. Save and exit.
 user@example:/$ chmod 755 weatherupdate
 ```
 
-### Part 5- Fun Fact quote module
+### (Optional) Part 5- Fun Fact quote module
 ```
 user@example:/$ sudo apt-get install node.js
 user@example:/$ sudo apt-get install npm
@@ -73,7 +74,7 @@ user@example:/$ ./weatherupdate
 ```
 this is for the weather updater
 
-In another window:
+If you are going to run the quote/fun fact module, run this in another window:
 ```
 user@example:/$ node quote.js
 ```
