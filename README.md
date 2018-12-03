@@ -53,11 +53,12 @@ user@example:/$ chmod 755 weatherupdate
 
 ### (Optional) Part 5- Fun Fact quote module
 ```
-user@example:/$ sudo apt-get install node.js
-user@example:/$ sudo apt-get install npm
-user@example:/$ npm install discord.js
-user@example:/$ npm install infinite-loop
-user@example:/$ nano config.json
+user@example:/quotemod/$ cd quotemod
+user@example:/quotemod/$ sudo apt-get install node.js
+user@example:/quotemod/$ sudo apt-get install npm
+user@example:/quotemod/$ npm install discord.js
+user@example:/quotemod/$ npm install infinite-loop
+user@example:/quotemod/$ nano config.json
 ```
 edit accordingly
 
@@ -76,7 +77,8 @@ this is for the weather updater
 
 If you are going to run the quote/fun fact module, run this in another window:
 ```
-user@example:/$ node quote.js
+user@example:/$ cd quotemod
+user@example:/quotemod/$ node quote.js
 ```
 This is for the fun fact module
 
