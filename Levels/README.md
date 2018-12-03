@@ -6,6 +6,7 @@ Based off [Taso](https://github.com/SSL-Dev-Team/Taso)
 *We will be using Microsoft SQL for linux here. Feel free to use whatever SQL server you want*
 
 **For Microsoft SQL, you NEED 64-bit Ubuntu Linux.**
+You can NOT use the Ubuntu Windows subsystem, Microsoft SQL will not run.
 
 To install mSQL for Linux:
 ```
