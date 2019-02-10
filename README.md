@@ -31,7 +31,7 @@ user@example:/$ cd ConnerBot
 ### Part 3- Setting up Conner Bot
 **make sure you are in the ConnerBot directory**
 ```
-user@example:/$ nano beta.py
+user@example:/$ nano main.py
 ```
 at the bottom of the file, you will find a token section. Put your bots token there. Save and exit
 
