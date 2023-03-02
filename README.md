@@ -1,3 +1,7 @@
+# Discontinuation
+As of 2019, ConnerBot and cServices have ceased operations and are no longer operational. Thank you to everyone who gave these projects over the years. 
+This code and others may be outdated and require updating.
+
 # ConnerBot
 Conner Bot for Discord. Python version.
 **This project requires Linux, preferrably Ubuntu. If you are not running Linux, STOP! Conner Bot WILL NOT run.**
